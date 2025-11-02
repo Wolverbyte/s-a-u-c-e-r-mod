@@ -1,0 +1,20 @@
+{
+  "hover": {
+    "subtitle": "subtitles.hover",
+    "sounds": [
+      {
+        "name": "saucer:593019__bjones97__spaceship-ufo-hovering-drone-loopable-effect",
+        "stream": false
+      }
+    ]
+  },
+  "laser": {
+    "subtitle": "subtitles.laser",
+    "sounds": [
+      {
+        "name": "saucer:420363__bolkmar__sfx-electric-laser-beam-v2",
+        "stream": false
+      }
+    ]
+  }
+}

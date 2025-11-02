@@ -1,0 +1,336 @@
+{
+  "mod_elements": [
+    {
+      "name": "Saucer",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/saucer/models/item/saucer_spawn_egg.json",
+          "src/main/java/net/mcreator/saucer/client/renderer/SaucerRenderer.java",
+          "src/main/java/net/mcreator/saucer/entity/SaucerEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SaucerEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_natural_entity_spawning_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerNaturalEntitySpawningConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AlienBeam",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alien_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/client/particle/AlienBeamParticle.java",
+          "src/main/resources/assets/saucer/particles/alien_beam.json"
+        ]
+      }
+    },
+    {
+      "name": "SaucerPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_playback_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerEntityTickP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_entity_tick_p_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerEntityTickP2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerDoorOpenPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_door_open_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerDoorOpenPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerEntityTickSuck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_entity_tick_suck",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerEntityTickSuckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerDoorOpenConditionP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_door_open_condition_p_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerDoorOpenConditionP2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerDoorClose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_door_close",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerDoorCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaucerDespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saucer_despawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/saucer/procedures/SaucerDespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "hover",
+      "files": [
+        "593019__bjones97__spaceship-ufo-hovering-drone-loopable-effect"
+      ],
+      "category": "neutral",
+      "subtitle": "A spaceship is nearby..."
+    },
+    {
+      "name": "laser",
+      "files": [
+        "420363__bolkmar__sfx-electric-laser-beam-v2"
+      ],
+      "category": "neutral",
+      "subtitle": "Something is being lasered"
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "subtitles.hover": "A spaceship is nearby...",
+      "subtitles.laser": "Something is being lasered",
+      "entity.saucer.saucer": "Flying Saucer",
+      "item.saucer.saucer_spawn_egg": "Flying Saucer Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "saucer",
+    "modName": "saucer",
+    "version": "1.0.0",
+    "author": "JY9146, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.saucer"
+  },
+  "mcreatorVersion": 202400452410
+}
